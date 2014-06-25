@@ -10,6 +10,9 @@ $xml = simplexml_load_string($rssString);
 $i = 0;
 $itemArray = $xml->channel->item;
 foreach ($itemArray as $item) {
+    if ($i > 2) {
+        break 1;
+    }
     $name = $item->title;
     $description = html_entity_decode($item->description);
 
