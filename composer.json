@@ -1,0 +1,5 @@
+{
+    "require": {
+        "op3nvoice/op3nvoice-helper": "dev-master"
+    }
+}
